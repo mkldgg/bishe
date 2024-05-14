@@ -219,8 +219,8 @@ def run(
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'D:\\Bishe\\yolov5-7.0\\jc\\weight\\best.pt', help='model path or triton URL')
-    parser.add_argument('--source', type=str, default=ROOT / 'D:\\Bishe\\AppleLeaf9\\Brown spot\\Brown spot (1).jpg', help='file/dir/URL/glob/screen/0(webcam)')
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'D:\\Bishe\\yolov5-7.0\\shuff\\weights\\best.pt', help='model path or triton URL')
+    parser.add_argument('--source', type=str, default=ROOT / 'D:\\Bishe\\P-苹果叶片病害检测2100\\JPEGImages\\leaf_20230828_2128_00001_jpg.rf.46daea03952d8ffdefe5f1c110cfd094.jpg', help='file/dir/URL/glob/screen/0(webcam)')
     parser.add_argument('--data', type=str, default=ROOT / 'data/apple.yaml', help='(optional) dataset.yaml path')
     parser.add_argument('--imgsz', '--img', '--img-size', nargs='+', type=int, default=[640], help='inference size h,w')
     parser.add_argument('--conf-thres', type=float, default=0.25, help='confidence threshold')
